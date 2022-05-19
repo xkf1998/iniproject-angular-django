@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<nav>
+    <a routerLink="/dashboard" [class.active]="activateIdx === 1" (click)="selectNav(1)">Dashboard</a>
+    <a routerLink="/heroes" [class.active]="activateIdx === 2" (click)="selectNav(2)">Heroes</a>
+</nav>
+<router-outlet> </router-outlet>
+<app-messages></app-messages>
